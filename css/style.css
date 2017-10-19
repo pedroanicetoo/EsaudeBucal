@@ -1,0 +1,263 @@
+@import 'nib';
+@import 'jeet';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+body h2{
+    color:#179c63;
+    
+}
+body h3{
+    color:#116f47;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 10px;
+}
+
+.header {
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+}
+
+.header .container {
+    position: relative;
+    top: 100px;
+}
+
+.header h1 {
+    color: #000;
+    line-height: 80px;
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 850px) {
+    .header h1 {
+        font-size: 100px;
+    }
+}
+
+.header p {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.btn {
+    color: #fff;
+    background: #000;
+    padding: 10px 40px;
+    text-decoration: none;
+    transition: background .5s;
+    text-align: center;
+}
+
+.btn-nav {
+    color: #fff;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+.btn-e{
+    color: #fff;
+    background:#179c63;
+    padding: 8px 8px;
+    font-family: initial;
+    text-decoration: none;
+    transition: background .5s;
+    text-align: center;
+}
+.nav {
+    background: #179c63;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.nav ul {
+    height: 80px;
+    list-style: none;
+    margin: 0px auto;
+    padding: auto;
+}
+
+.nav ul li {
+    color: #fff;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    padding: 0 10px;
+    transition: background .5s;
+}
+
+.btn:hover, .nav ul li:hover {
+    background: #116f47;
+    cursor: pointer;
+    transition: background .5s;
+}
+/* fontes para alguns parágrafos e índices*/
+
+
+.p-objetivo1{
+   font-weight: 600;
+    font-family: sans-serif;
+    
+}
+
+.cargos{
+    font-family:initial;
+    font-size: initial;
+    font-weight: bold;
+    margin: initial;
+    text-decoration: underline;
+}
+.faculdade{
+    font-family: serif;
+    font-size: unset;
+}
+.container p {
+    text-align: justify;
+}
+
+.item-contato{
+    font-family: serif;
+    font-size: larger;
+}
+
+.main .container {
+    margin: 80px auto;
+}
+.equipe{
+    background-image: url(https://github.com/kyriosdata/sisb/blob/master/esaudebucal.com.br/favicon.png?raw=true);
+    background-repeat: no-repeat;
+    background-position:right;
+           
+}
+
+.img-l {
+  float: left;
+  margin: 0px 50px 30px 0;
+}
+
+.img-r{
+  float: right;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  margin: 0px -30px 0px 0;
+}
+
+.logo-nav img{
+  height: 20px;
+}
+
+.footer {
+    background: #179c63;
+    height: 80px;
+    padding-bottom: 50px;
+}
+
+.footer p {
+    color: #fff;
+    font-size: 14px;
+    height: 80px;
+    line-height: 100px;
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .header h1 {
+        font-size: 42px;
+        line-height: 51px;
+    }
+
+    .main {
+        padding: 0 30px;
+    }
+
+    .main img {
+        width: 100%;
+    }
+}
+
+/* carousel */
+
+.carousel {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.slides {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    color: black;
+    line-height: 100px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+
+.slide[data-state=active] {
+    display: block;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.indicator {
+    cursor: pointer;
+}
+
+.slide:nth-child(1) {
+    background-image: url("http://esaudebucal.com.br/images/image2.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat, repeat;
+    opacity: 1;
+}
+
+.slide:nth-child(2) {
+    background-image: url("http://esaudebucal.com.br/healthcodec.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat, repeat;
+}
+
+.slide:nth-child(3) {
+    background-image: url("http://esaudebucal.com.br/archetypebot.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat, repeat;
+}
