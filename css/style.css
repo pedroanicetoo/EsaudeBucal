@@ -89,6 +89,8 @@ body h3{
     width: 100%;
     position: fixed;
     z-index: 2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .nav ul {
