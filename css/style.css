@@ -89,6 +89,8 @@ body h3{
     width: 100%;
     position: fixed;
     z-index: 2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .nav ul {
@@ -106,13 +108,16 @@ body h3{
     list-style: none;
     padding: 0 10px;
     transition: background .5s;
+    border-radius: 10px;
 }
 
 .btn:hover, .nav ul li:hover {
     background: #116f47;
     cursor: pointer;
     transition: background .5s;
+    border-radius: 10px;
 }
+
 /* fontes para alguns parágrafos e índices*/
 
 
