@@ -80,15 +80,24 @@ body h3{
     padding: 8px 8px;
     font-family: initial;
     text-decoration: none;
-    transition: background .5s;
     text-align: center;
+    border-radius: 12px;
+}
+.btn-e:hover {
+	background:#116f47;
+	cursor: pointer;
+    transition: background .5s;
+    border-radius: 12px;
 }
 .nav {
+	margin-left: 20%;
     background: #179c63;
     height: 50px;
-    width: 100%;
+    width: 60%;
     position: fixed;
     z-index: 2;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .nav ul {
@@ -106,12 +115,14 @@ body h3{
     list-style: none;
     padding: 0 10px;
     transition: background .5s;
+    border-radius: 10px;
 }
 
 .btn:hover, .nav ul li:hover {
     background: #116f47;
     cursor: pointer;
     transition: background .5s;
+    border-radius: 10px;
 }
 /* fontes para alguns parágrafos e índices*/
 
@@ -146,7 +157,7 @@ body h3{
     margin: 80px auto;
 }
 .equipe{
-    background-image: url(https://github.com/kyriosdata/sisb/blob/master/esaudebucal.com.br/favicon.png?raw=true);
+    background-image: url("../favicon%20(1).png");
     background-repeat: no-repeat;
     background-position:right;
            
@@ -241,7 +252,7 @@ body h3{
 }
 
 .slide:nth-child(1) {
-    background-image: url("http://esaudebucal.com.br/images/image2.png");
+    background-image: url("../esaude.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat, repeat;
@@ -249,14 +260,14 @@ body h3{
 }
 
 .slide:nth-child(2) {
-    background-image: url("http://esaudebucal.com.br/healthcodec.png");
+    background-image: url("../ufg.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat, repeat;
 }
 
 .slide:nth-child(3) {
-    background-image: url("http://esaudebucal.com.br/archetypebot.png");
+    background-image: url("../ses-go.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat, repeat;
